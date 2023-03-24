@@ -5,7 +5,7 @@ This repo shows an example avro schema with complex record type produced to kafk
 
 ## turn up the infra using docker compose
 
-docker compose up
+`docker compose up`
 
 
 ## run the kafka producer
