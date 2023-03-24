@@ -1,0 +1,12 @@
+{
+  "name": "Bob Johnson",
+  "age": 40,
+  "address": {
+    "@type": "MailingAddress",
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345"
+  }
+}
+

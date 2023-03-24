@@ -1,0 +1,49 @@
+{
+  "type": "record",
+  "namespace": "com.example",
+  "name": "Person",
+  "fields": [
+    {"name": "name", "type": "string"},
+    {"name": "age", "type": "int"},
+    {"name": "address",
+     "type": [
+      "null",
+      {
+        "type": "record",
+        "namespace": "com.example",
+        "name": "MailingAddress",
+        "fields": [
+          {"name": "street", "type": "string"},
+          {"name": "city", "type": "string"},
+          {"name": "state", "type": "string"},
+          {"name": "zip", "type": "int"}
+        ]
+      },
+      {
+        "type": "record",
+        "namespace": "com.example",
+        "name": "POBoxAddress",
+        "fields": [
+          {"name": "po_box", "type": "int"},
+          {"name": "city", "type": "string"},
+          {"name": "state", "type": "string"},
+          {"name": "zip", "type": "int"}
+        ]
+      },
+      {
+        "type": "record",
+        "namespace": "com.example",
+        "name": "InternationalAddress",
+        "fields": [
+          {"name": "line_1", "type": "string"},
+          {"name": "line_2", "type": ["null", "string"]},
+          {"name": "city", "type": "string"},
+          {"name": "province", "type": ["null", "string"]},
+          {"name": "postal_code", "type": "string"},
+          {"name": "country", "type": "string"}
+        ]
+      }]
+    }
+  ]
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "test-kafka",
+  "description": "description",
+  "authors": "author",
+  "version": "1.0.0",
+  "main": "pathToMain",
+  "dependencies": {
+    "avro-js": "^1.11.1",
+    "avsc": "^5.7.7",
+    "kafkajs": "^2.2.4"
+  }
+}
